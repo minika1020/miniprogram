@@ -1,0 +1,16 @@
+<template>
+  <div>
+    <p> count 当前的值:{{$store.state.count}}</p>
+
+    <button @click="add">+1</button>
+  </div>
+</template>
+<script>
+export default {
+  methods: {
+    add() {
+      this.$store.state.count++
+    }
+  }
+}
+</script>
